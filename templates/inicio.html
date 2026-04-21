@@ -5,24 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema agendamentos</title>
     <style>
+        
         body{
-            
+            font-family: Arial, Helvetica, sans-serif;
             background-color: pink;
         }
 
         .inicio{
             background-color: white;
-            width: 40%;
-            height: 300px;
-            margin: auto;
-            text-align:center;
-            
-            border-radius: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            padding: 80px;
+            border-radius: 15px;
         }
         button{
-            padding: 6px;
-            text-align: left;
-            
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: deepskyblue;
         }
 
 
@@ -30,10 +39,19 @@
 </head>
 
 <body>
+    <div class="carrossel">
+        <div class="groupe">
+            <div class="card">1</div>
+            <div class="card">2</div>
+            <div class="card">3</div>
+        </div>
+    </div>
+
+
     <div class="inicio">
-        <h2>Seja bem vinda!</h2>
+        <h1>Seja bem vinda!</h1>
         <p>Clique no botão abaixo para iniciar o agendamento!</p>
-        <button>Agendar</button>
+        <button>Começar agendamento</button>
     </div>
 
 </body>
