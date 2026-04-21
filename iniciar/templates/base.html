@@ -3,11 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base</title>
+    <title>Agendamentos JN</title>
+
+    <link rel="stylesheet" href="/iniciar/static/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav>
-        <a href="{{url_for('inicio')}}"
+    <footer class="footer">
+        <div class="container">
+            <div class="sobre">
+                <h2>Sobre</h2>
+                <p>Nail designer que transforma unhas comuns em obras de arte, 
+                    trazendo uma maior autoestima e qualidade de vida!</p>
+            </div>
+                        
+            <div class="contatos">
+                <h3>Contatos</h3>
+                <a href="a">Insta</a>
+                    <i class="fa-brands fa-instagram"></i>
+                
+                <a href="">zap</a>
+                    <i class="fa-brands fa-whatsapp"></i>
+            </div>
+
+            <div class="grupo"></div>
+                <h3>Entre no grupo!</h3>
+                <a href="">Grupo</a>
+        </div>       
+    </footer>
     {% block conteudo %}
     {% endblock %}
 </body>

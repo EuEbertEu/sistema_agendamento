@@ -17,8 +17,9 @@
             top: 50%;
             left: 50%; 
             transform: translate(-50%, -50%); 
-            padding: 80px;
+            padding: 50px;
             border-radius: 15px;
+            text-align: center;
         }
         button{
             background-color: dodgerblue;
@@ -43,7 +44,8 @@
     <div class="inicio">
         <h1>Seja bem vinda!</h1>
         <p>Clique no botão abaixo para iniciar o agendamento!</p>
-        <button>Começar agendamento</button>
+        <a href="{{url_for('agendamento')}}"><button>Começar agendamento</button></a>
+        
     </div>
 
 </body>

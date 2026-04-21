@@ -6,7 +6,7 @@ def inicio():
     return render_template('inicio.html')
 
 @app.route('/agendamento')
-def angendamento():
+def agendamento():
     return render_template('agendamento.html')
 
 @app.route('/servicos')
