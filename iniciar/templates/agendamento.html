@@ -1,10 +1,98 @@
 {% extends 'base.html' %}
 
 {% block conteudo %}
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: pink;
+
+        /* Centraliza o container na tela */
+        display: flex;
+        height: 100vh;
+    }
+
+    .cont{
+        background-color: white;
+        margin: auto;
+        height: 95%;
+        width: 50%;
+        padding: 40px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    /* Área dos inputs */
+    .formulario{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .campo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label{
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    input{
+        width: 220px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #999;
+        border-radius: 8px;
+    }
+
+    button{
+        display: flex;
+        border: none;
+        padding: 15px;
+        margin: auto;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: #ff7aa2;
+        color: white;
+        margin-top: 14px;
+    }
+
+    button:hover{
+        background-color: #ff4f85;
+    }
+
+</style>
+
 <body>
-    <input type="date">    
-<input type="text">
-<p>agendamentos</p>
+    <div class="cont">
+        
+        <h2>Vamos começar o agendamento!</h2>
+        <p>Primeiro, escolha a data e a hora que deseja!</p>
+        
+         <div class="formulario">
+
+            <!-- Seleção de data com calendário -->
+            <div class="campo">
+                <label for="data">Selecionar data</label>
+                <input type="date" id="data">
+            </div>
+
+            <!-- Seleção de hora -->
+            <div class="campo">
+                <label for="hora">Selecionar horário</label>
+                <input type="time" id="hora">
+            </div>
+
+        </div>
+    
+        <a href="{{url_for('servicos')}}"><button >Continuar</button></a>
+    </div>
+
+
 </body>
 
 {% endblock %}
