@@ -59,6 +59,7 @@
         background-color: #ff7aa2;
         color: white;
         margin-top: 14px;
+        outline: none;
     }
 
     button:hover{
@@ -78,18 +79,34 @@
             <!-- Seleção de data com calendário -->
             <div class="campo">
                 <label for="data">Selecionar data</label>
-                <input type="date" id="data">
+                <input list="date" id="data" required>
+
+                <datalist id="date">
+                    <option value="18/05">
+                    <option value="19/05">
+                    <option value="20/05">
+                    <option value="21/05">
+                    <option value="22/05">
+                </datalist>
             </div>
 
             <!-- Seleção de hora -->
             <div class="campo">
                 <label for="hora">Selecionar horário</label>
-                <input type="time" id="hora">
+                <input list="hour" id="hora" required>
+
+                <datalist id="hour">
+                    <option value="13:00">
+                    <option value="14:30">
+                    <option value="16:00">
+                    <option value="17:30">
+                    <option value="19:00">
+                </datalist>
             </div>
 
         </div>
     
-        <a href="{{url_for('servicos')}}"><button >Continuar</button></a>
+        <a href="{{url_for('servicos')}}"><button type="submit">Continuar</button></a>
     </div>
 
 
